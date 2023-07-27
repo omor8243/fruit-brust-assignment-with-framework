@@ -42,11 +42,11 @@
   <header class="container mx-auto">
     <!--nav section start-->
     <section class="">
-      <div class="navbar bg-bgcolor my-12 rounded-[50px] px-12 py-7 grid grid-flow-col">
+      <div class="navbar lg:bg-bgcolor my-12 rounded-[50px] lg:px-12 py-7 grid grid-flow-col">
         <!--navbar-->
 
         <!--manu-->
-        <div class="">
+        <div class="hidden lg:block">
           <ul class="flex gap-7 text-white text-lg font-medium ">
             <li>Home</li>
             <li>About Us</li>
@@ -56,27 +56,30 @@
         </div>
 
           <!--logo-->
-          <div class="flex items-center gap-2 pr-7">
+          <div class="flex items-center gap-2 lg:pr-7">
             <img src="./images/logo.png" alt="">
-            <h3 class=" text-white text-4xl font-bold">Fruit Burst</h3>
+            <h3 class=" text-black  text-3xl lg:text-4xl font-bold">Fruit Burst</h3>
           </div>
           <!--saerch-bar-->
-          <div>
+          <div class="hidden lg:block ">
             <div class="form-control ml-auto relative ">
               <input type="text" placeholder="Search here" class="input input-bordered w-24 md:w-auto rounded-[50px]"/>
               <span class="absolute top-3 right-0 pr-3">
                 <i class="fa-solid fa-magnifying-glass"></i>
               </span>
             </div>
+          </div>
 
-            <button class="btn btn-square btn-ghost lg:hidden">
+          <span class="block lg:hidden ml-auto">
+            <button class="btn btn-square btn-ghost">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                 class="inline-block w-5 h-5 stroke-current">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
                 </path>
               </svg>
             </button>
-          </div>
+          </span>
+         
       </div>
     </section>
     <!--nav section end-->
@@ -282,10 +285,10 @@
                   </svg>
               </div>
 
-              <div class="modal-action gap-5 ">
+              <div class="modal-action gap-5 flex justify-center ">
                 <!-- if there is a button in form, it will close the modal -->
-                <button class="btn">Close</button>
-                <button class="btn bg-bgcolor">Buy Now</button>
+                <button class="rounded-lg border border-[#F85559] px-6 py-4">Close</button>
+                <button class=" bg-bgcolor px-6 py-4 rounded-lg">Buy Now</button>
               </div>
             </form>
           </dialog>
